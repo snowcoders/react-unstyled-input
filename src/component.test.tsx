@@ -17,16 +17,16 @@ describe("UnstyledInput", () => {
 
     it("Default has classname", () => {
         let wrapper = shallow(<UnstyledInput />);
-        let htmlButton = wrapper.find("input");
-        expect(htmlButton).to.have.length(1);
-        expect(htmlButton.props().className).to.contain('sci-react-unstyled-input');
+        let htmlInput = wrapper.find("input");
+        expect(htmlInput).to.have.length(1);
+        expect(htmlInput.props().className).to.contain('sci-react-unstyled-input');
     });
 
     it("Disable style has no classname", () => {
         let wrapper = shallow(<UnstyledInput className="blue" isBaseStylesDisabled={true} />);
-        let htmlButton = wrapper.find("input");
-        expect(htmlButton).to.have.length(1);
-        expect(htmlButton.props().className).to.not.contain('sci-react-unstyled-input');
+        let htmlInput = wrapper.find("input");
+        expect(htmlInput).to.have.length(1);
+        expect(htmlInput.props().className).to.not.contain('sci-react-unstyled-input');
     });
 
     it("Click event", (done) => {
@@ -40,9 +40,9 @@ describe("UnstyledInput", () => {
 
     it("Class name override", () => {
         let wrapper = shallow(<UnstyledInput className="blue" />);
-        let htmlButton = wrapper.find("input");
-        expect(htmlButton).to.have.length(1);
-        expect(htmlButton.props().className).to.contain('sci-react-unstyled-input');
-        expect(htmlButton.props().className).to.contain('blue');
+        let htmlInput = wrapper.find("input");
+        expect(htmlInput).to.have.length(1);
+        expect(htmlInput.props().className).to.contain('sci-react-unstyled-input');
+        expect(htmlInput.props().className).to.contain('blue');
     });
 });

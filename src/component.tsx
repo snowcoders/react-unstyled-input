@@ -2,7 +2,7 @@ import * as React from "react";
 
 import * as classnames from "classnames";
 
-export interface IUnstyledInputProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IUnstyledInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     isBaseStylesDisabled?: boolean
 }
 

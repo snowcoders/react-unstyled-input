@@ -1,6 +1,6 @@
 {
   "name": "@snowcoders/react-unstyled-input",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component that renders a HTMLInputElement and removes all the styles from it so it looks like a HTMLDivElement",
   "keywords": [
     "Unstyled",
