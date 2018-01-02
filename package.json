@@ -1,7 +1,6 @@
 {
   "name": "@snowcoders/react-unstyled-input",
   "version": "0.1.1",
-  "description": "React component that renders a HTMLInputElement and removes all the styles from it so it looks like a HTMLDivElement",
   "keywords": [
     "Unstyled",
     "Input"
@@ -14,10 +13,11 @@
     "build": "npm run build-scss && npm run build-typescript",
     "build-scss": "node-sass src/styles.scss dist/styles.css",
     "build-typescript": "tsc",
-    "clean": "rimraf dist",
+    "clean": "rimraf .nyc_output coverage dist",
+    "cover": "nyc npm run test",
     "prepare": "npm run clean && npm run build",
     "test": "npm run mocha",
-    "mocha": "mocha --require mocha-es6-hook src/**/*.test.tsx"
+    "mocha": "mocha --opts .mocha"
   },
   "author": "Snowcoders",
   "license": "MIT",
@@ -38,9 +38,11 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^4.1.0",
     "node-sass": "^4.7.2",
+    "nyc": "^11.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "rimraf": "^2.6.2",
+    "source-map-support": "^0.5.0",
     "ts-node": "^4.1.0",
     "typescript": "^2.6.2"
   }

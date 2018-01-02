@@ -1,3 +1,6 @@
+[![npm (scoped)](https://img.shields.io/npm/v/@snowcoders/react-unstyled-input.svg)](https://www.npmjs.com/package/@snowcoders/react-unstyled-input) 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/snowcoders/react-unstyled-input.svg)](https://circleci.com/gh/snowcoders/react-unstyled-input)
+
 # Use it
 `npm install --save @snowcoders/react-unstyled-input`
 
