@@ -29,6 +29,13 @@ describe("UnstyledInput", () => {
         expect(htmlInput.props().className).to.not.contain('sci-react-unstyled-input');
     });
 
+    it("Custom class name", () => {
+        let wrapper = shallow(<UnstyledInput className="blue" />);
+        let htmlInput = wrapper.find("input");
+        expect(htmlInput).to.have.length(1);
+        expect(htmlInput.props().className).to.equal('sci-react-unstyled-input blue');
+    });
+
     it("Click event", (done) => {
         let props = {
             onClick: done
